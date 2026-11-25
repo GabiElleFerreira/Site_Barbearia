@@ -65,7 +65,11 @@ export const obterBarbeiros = () => {
     return BARBEIROS_INICIAIS;
   }
   try {
-    return JSON.parse(dados);
+    const parsed = JSON.parse(dados);
+    return parsed.map((b) => {
+      const padrao = BARBEIROS_INICIAIS.find((p) => p.id === b.id);
+      return padrao ? { ...b, fotoUrl: padrao.fotoUrl } : b;
+    });
   } catch {
     return BARBEIROS_INICIAIS;
   }

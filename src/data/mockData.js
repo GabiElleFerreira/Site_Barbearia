@@ -1,10 +1,17 @@
+import toolsImg from '../assets/images/barbershop_tools_1792166161540.jpg';
+import rodrigoImg from '../assets/images/barber_rodrigo_1792166162131.jpg';
+import felipeImg from '../assets/images/barber_felipe_1792166162736.jpg';
+import caioImg from '../assets/images/barber_caio_1792166163597.jpg';
+import interiorImg from '../assets/images/barbershop_interior_1792166164177.jpg';
+
 export const ASSETS = {
-  tools: '/src/assets/images/barbershop_tools_1792166161540.jpg',
-  rodrigo: '/src/assets/images/barber_rodrigo_1792166162131.jpg',
-  felipe: '/src/assets/images/barber_felipe_1792166162736.jpg',
-  caio: '/src/assets/images/barber_caio_1792166163597.jpg',
-  interior: '/src/assets/images/barbershop_interior_1792166164177.jpg',
+  tools: toolsImg,
+  rodrigo: rodrigoImg,
+  felipe: felipeImg,
+  caio: caioImg,
+  interior: interiorImg,
 };
+
 
 export const SERVICOS_INICIAIS = [
   {
